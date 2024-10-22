@@ -1,0 +1,9 @@
+
+<div class="parentContainer">
+    <h2>Parent Component</h2>
+    <input [(ngModel)]="parentInput" placeholder="Enter a value" />
+    <hr>
+    <app-child [inputValue]="parentInput" (messageEvent)="receiveMessage($event)"></app-child>
+    <hr>
+    <p>Message from Child: {{ childMessage }}</p>
+  </div>

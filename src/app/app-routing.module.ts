@@ -6,12 +6,14 @@ import { AngcontentComponent } from './angcontent/angcontent.component';
 import { AngtemplateComponent } from './angtemplate/angtemplate.component';
 import { PageOneComponent } from './page-one/page-one.component';
 import { FormCompComponent } from './form-comp/form-comp.component';
+import { ParentComponent } from './parent/parent.component';
 
 const routes: Routes = [{path:'',component:AngcontainerComponent},
   {path:'Container',component:AngcontainerComponent},
   {path:'Content',component:AngcontentComponent},
   {path:'Template',component:AngtemplateComponent},
   {path:'Form',component:FormCompComponent},
+  {path:'InputOutput',component:ParentComponent},
   {path:'**',component:PageOneComponent}
 
 ];

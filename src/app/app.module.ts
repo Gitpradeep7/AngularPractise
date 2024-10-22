@@ -16,6 +16,9 @@ import { AngcontentComponent } from './angcontent/angcontent.component';
 import { AngtemplateComponent } from './angtemplate/angtemplate.component';
 import { Router, RouterLink } from '@angular/router';
 import { FormCompComponent } from './form-comp/form-comp.component';
+import { ChildComponent } from './child/child.component';
+import { ParentComponent } from './parent/parent.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,14 +29,17 @@ import { FormCompComponent } from './form-comp/form-comp.component';
     AngcontainerComponent,
     AngcontentComponent,
     AngtemplateComponent,
-    FormCompComponent
+    FormCompComponent,
+    ChildComponent,
+    ParentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
