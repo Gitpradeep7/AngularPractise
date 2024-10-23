@@ -7,6 +7,8 @@ import { AngtemplateComponent } from './angtemplate/angtemplate.component';
 import { PageOneComponent } from './page-one/page-one.component';
 import { FormCompComponent } from './form-comp/form-comp.component';
 import { ParentComponent } from './parent/parent.component';
+import { ViewchildComponent } from './viewchild/viewchild.component';
+import { ColorComponent } from './color/color.component';
 
 const routes: Routes = [{path:'',component:AngcontainerComponent},
   {path:'Container',component:AngcontainerComponent},
@@ -14,6 +16,8 @@ const routes: Routes = [{path:'',component:AngcontainerComponent},
   {path:'Template',component:AngtemplateComponent},
   {path:'Form',component:FormCompComponent},
   {path:'InputOutput',component:ParentComponent},
+  {path:'ViewChild',component:ViewchildComponent},
+  {path:'Color',component:ColorComponent},
   {path:'**',component:PageOneComponent}
 
 ];

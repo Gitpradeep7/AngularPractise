@@ -1,0 +1,31 @@
+<!-- <div class="colorcontainer">
+    <input type="checkbox" id value="blue">
+    <label > blue</label><br>
+
+    <input type="checkbox" id value="Red">
+    <label > Red</label><br>
+
+    <input type="checkbox" id value="Green">
+    <label > Green</label><br>
+
+    <input type="checkbox" id value="Yellow">
+    <label > Yellow</label><br>
+
+    <input type="checkbox" id value="Orange">
+    <label > Orange</label><br>
+</div>
+<h1 id="val"></h1>
+<div #boxclr class="color-box">
+
+</div> -->
+
+<h3>Select a color to change the box color:</h3>
+
+<div *ngFor="let color of colors">
+  <label>
+    <input type="checkbox" [value]="color" (change)="changeColor(color, $event)"> {{ color | titlecase }}
+  </label>
+</div>
+
+<div id="colorBox" [style.backgroundColor]="selectedColor" class="color-box"></div>
+

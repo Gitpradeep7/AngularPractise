@@ -19,6 +19,8 @@ import { FormCompComponent } from './form-comp/form-comp.component';
 import { ChildComponent } from './child/child.component';
 import { ParentComponent } from './parent/parent.component';
 import { FormsModule } from '@angular/forms';
+import { ViewchildComponent } from './viewchild/viewchild.component';
+import { ColorComponent } from './color/color.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { FormsModule } from '@angular/forms';
     AngtemplateComponent,
     FormCompComponent,
     ChildComponent,
-    ParentComponent
+    ParentComponent,
+    ViewchildComponent,
+    ColorComponent
   ],
   imports: [
     BrowserModule,
