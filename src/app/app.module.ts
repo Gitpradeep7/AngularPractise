@@ -25,7 +25,9 @@ import { PosttableComponent } from './posttable/posttable.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TabsComponent } from './tabs/tabs.component';
 import { MatSortModule } from '@angular/material/sort';
-
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+import { ShoppingComponent } from './shopping/shopping.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,8 @@ import { MatSortModule } from '@angular/material/sort';
     ColorComponent,
     TableComponent,
     PosttableComponent,
-    TabsComponent
+    TabsComponent,
+    ShoppingComponent
   ],
   imports: [
     BrowserModule,
@@ -53,8 +56,9 @@ import { MatSortModule } from '@angular/material/sort';
     CommonModule,
     FormsModule,
     HttpClientModule,
-    MatSortModule
-
+    MatSortModule,
+    MatButtonModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

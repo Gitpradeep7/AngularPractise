@@ -8,7 +8,7 @@ import { Router, RouterLink } from '@angular/router';
 export class AppComponent {
  // [x: string]: any;
   item:string='';
-  angularTopic = ['Container','Template','Content','Form','InputOutput','ViewChild','Color','Tabs/Table'];
+  angularTopic = ['Container','Template','Content','Form','InputOutput','ViewChild','Color','Tabs/Table','Shop'];
   buttonToggle(item:any){
     this.item=item;
   }

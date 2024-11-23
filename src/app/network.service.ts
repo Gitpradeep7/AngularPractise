@@ -10,4 +10,7 @@ export class NetworkService {
   getPostURl(){
    return this.http.get('https://jsonplaceholder.typicode.com/posts');
   }
+  getShopURL(){
+    return this.http.get('https://fakestoreapi.com/products');
+  }
 }
