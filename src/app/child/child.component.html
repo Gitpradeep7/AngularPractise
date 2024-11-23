@@ -1,5 +1,7 @@
 <div>
     <h3>Child Component</h3>
+    
     <p>Input Value: {{ inputValue }}</p>
-    <button (click)="sendMessage()">Send Message to Parent</button>
+    <input type="text" #mes>
+    <button (click)="sendMessage(mes.value)">Send Message to Parent</button>
 </div>

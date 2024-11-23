@@ -9,7 +9,7 @@ export class ChildComponent {
   @Input() inputValue: string = '';
   @Output() messageEvent = new EventEmitter<string>();
 
-  sendMessage() {
-    this.messageEvent.emit('Hello from Child!');
+  sendMessage(item:any) {
+    this.messageEvent.emit(item);
   }
 }

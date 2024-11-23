@@ -23,7 +23,7 @@
 
 <div *ngFor="let color of colors">
   <label>
-    <input type="checkbox" [value]="color" (change)="changeColor(color, $event)"> {{ color | titlecase }}
+    <input type="radio" [value]="color" name='colors' (change)="changeColor(color, $event)"> {{ color | titlecase }}
   </label>
 </div>
 

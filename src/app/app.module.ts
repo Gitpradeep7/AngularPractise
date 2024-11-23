@@ -14,13 +14,18 @@ import { CommonModule } from '@angular/common';
 import { AngcontainerComponent } from './angcontainer/angcontainer.component';
 import { AngcontentComponent } from './angcontent/angcontent.component';
 import { AngtemplateComponent } from './angtemplate/angtemplate.component';
-import { Router, RouterLink } from '@angular/router';
 import { FormCompComponent } from './form-comp/form-comp.component';
 import { ChildComponent } from './child/child.component';
 import { ParentComponent } from './parent/parent.component';
 import { FormsModule } from '@angular/forms';
 import { ViewchildComponent } from './viewchild/viewchild.component';
 import { ColorComponent } from './color/color.component';
+import { TableComponent } from './table/table.component';
+import { PosttableComponent } from './posttable/posttable.component';
+import { HttpClientModule } from '@angular/common/http';
+import { TabsComponent } from './tabs/tabs.component';
+import { MatSortModule } from '@angular/material/sort';
+
 
 @NgModule({
   declarations: [
@@ -35,7 +40,10 @@ import { ColorComponent } from './color/color.component';
     ChildComponent,
     ParentComponent,
     ViewchildComponent,
-    ColorComponent
+    ColorComponent,
+    TableComponent,
+    PosttableComponent,
+    TabsComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +51,10 @@ import { ColorComponent } from './color/color.component';
     BrowserAnimationsModule,
     MaterialModule,
     CommonModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    MatSortModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,67 +1,15 @@
 <div class="formContainer">
 <mat-form-field>
-    <mat-label>Name</mat-label>
-    <input matInput>
+    <mat-label>Email</mat-label>
+    <input matInput type="email">
   </mat-form-field>
   <mat-form-field>
-    <mat-label>Gender</mat-label>
-    <mat-select>
-      <mat-option value="male">Male</mat-option>
-      <mat-option value="female">Female</mat-option>
-    </mat-select>
+    <mat-label>Phone NUM</mat-label>
+    <input matInput type="tel" [(ngModel)]="phone"  (keyup)="phoneValid($event)">
   </mat-form-field>
-  <mat-form-field>
-    <mat-label>Address</mat-label>
-    <textarea matInput></textarea>
-  </mat-form-field>
+  <button mat-raised-button  [disabled]="isDefault">OTP</button>
+
   <button mat-stroked-button>ADD</button>
 </div>
-<!-- <h3>Address Form</h3>
-<form class="formwidth" (ngSubmit)="onSubmit()" >
-    <table class="fullwidth" cellspacing="0">
-        <tr>
-            <td>
-                <mat-form-field class="fullwidth">
-                    <input matInput placeholder="First Name" id="firstname" [(ngModel)]="address.firstname" name="firstname">
-                </mat-form-field>
-            </td>
-            <td>
-                <mat-form-field class="fullwidth">
-                    <input matInput placeholder="Last Name" id="lastname" [(ngModel)]="address.lastname" name="lastname">
-                </mat-form-field>
-            </td>
-        </tr>
-    </table>
-    <p>
-        <mat-form-field class="fullwidth">
-            <textarea matInput placeholder="Address" id="address" [(ngModel)]="address.address" name="address"></textarea>
-        </mat-form-field>
-    </p>
-    <table class="fullwidth" cellspacing="0">
-        <tr>
-            <td>
-                <mat-form-field class="fullwidth">
-                    <input matInput placeholder="City" id="city" [(ngModel)]="address.city" name="city">
-                </mat-form-field>
-            </td>
-            <td>
-                <mat-form-field class="fullwidth">
-                    <input matInput placeholder="State" id="state" [(ngModel)]="address.state" name="state">
-                </mat-form-field>
-            </td>
-            <td>
-                <mat-form-field class="fullwidth">
-                    <input matInput #postalcode maxlength="5" placeholder="Postal Code" id="postalcode" [(ngModel)]="address.postalcode" name="postalcode">
-                    <md-hint align="end">
-                        {{postalcode.value.length}} / 5
-                    </md-hint>
-                </mat-form-field>
-            </td>
-        </tr>
-    </table>
-    <p>
-         <button type="submit" md-raised-button>Submit</button> 
-        <button mat-stroked-button>ADD</button>
-    </p>
-</form> 
--->
+
+

@@ -9,6 +9,9 @@ import { FormCompComponent } from './form-comp/form-comp.component';
 import { ParentComponent } from './parent/parent.component';
 import { ViewchildComponent } from './viewchild/viewchild.component';
 import { ColorComponent } from './color/color.component';
+import { TableComponent } from './table/table.component';
+import { PosttableComponent } from './posttable/posttable.component';
+import { TabsComponent } from './tabs/tabs.component';
 
 const routes: Routes = [{path:'',component:AngcontainerComponent},
   {path:'Container',component:AngcontainerComponent},
@@ -18,6 +21,10 @@ const routes: Routes = [{path:'',component:AngcontainerComponent},
   {path:'InputOutput',component:ParentComponent},
   {path:'ViewChild',component:ViewchildComponent},
   {path:'Color',component:ColorComponent},
+  {path:'Tabs',component:TabsComponent,children:[
+    {path:'Table',component:TableComponent},
+    {path:'Posttable',component:PosttableComponent}
+  ]},
   {path:'**',component:PageOneComponent}
 
 ];
